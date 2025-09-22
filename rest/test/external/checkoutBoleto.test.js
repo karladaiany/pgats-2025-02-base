@@ -3,7 +3,7 @@ const { expect } = require('chai')
 
 require('dotenv').config()
 
-describe.only('Realizar checkout', () => {
+describe('Realizar checkout', () => {
     
     before(async () => {
         const loginUser = require('../fixture/requests/login/loginUser.json')
