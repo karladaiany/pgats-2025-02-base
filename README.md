@@ -192,7 +192,7 @@ Acesse a documentação Swagger em [http://localhost:3000/api-docs](http://local
 
 ### GraphQL
 ```bash
-node graphql/app.js
+node graphql/server.js
 ```
 Acesse o playground GraphQL em [http://localhost:4000/graphql](http://localhost:4000/graphql)
 
