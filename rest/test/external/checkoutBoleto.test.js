@@ -7,10 +7,12 @@ describe('Realizar checkout', () => {
     
     before(async () => {
         const loginUser = require('../fixture/requests/login/loginUser.json')
+        
         const resposta = await request(process.env.BASE_URL_REST)
             .post('/api/users/login')
             .send(loginUser)
-        token = resposta.body.token
+        
+            token = resposta.body.token
     })
     
     it('POST /api/checkout - Validar que checkout é realizado com sucesso', async () => {

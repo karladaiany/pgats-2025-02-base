@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha **/test/**/*.test.js --timeout 10000 --reporter mochawesome",
     "test-rest-external": "mocha rest/test/external/*.test.js --timeout 10000 --reporter mochawesome",
-    "test-graphql-external": "mocha graphql/test/external/*.test.js --timeout 10000 --reporter mochawesome"
+    "test-graphql-external": "mocha graphql/test/external/*.test.js --timeout 10000 --reporter mochawesome",
+    "test-rest-controller": "mocha rest/test/controller/*.test.js --timeout 10000 --reporter mochawesome"
   },
   "repository": {
     "type": "git",
