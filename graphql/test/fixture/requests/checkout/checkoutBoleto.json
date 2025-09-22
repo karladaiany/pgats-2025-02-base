@@ -1,0 +1,17 @@
+{
+    "query": "mutation Checkout($items: [CheckoutItemInput!]!, $freight: Float!, $paymentMethod: String!, $cardData: CardDataInput) { checkout(items: $items, freight: $freight, paymentMethod: $paymentMethod, cardData: $cardData) { freight items { productId quantity } paymentMethod userId valorFinal } }",
+    "variables": {
+        "items": [
+            {
+                "productId": 1,
+                "quantity": 2
+            },
+            {
+                "productId": 2,
+                "quantity": 1
+            }
+        ],
+        "freight": 10,
+        "paymentMethod": "boleto"
+    }
+}
